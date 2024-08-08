@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Test Page</title>
+        <title>Watch My Stream!</title>
     </head>
     <body>
-        <h1> Hey. I'm a big heading. Look at me!</h1>
-        <p>Hey, I'm a <b>paragraph</b> element. Cool Huh?</p>
-        <a href="https://google.com" target="_blank" title="Let's go to Google!">Click Me! I'm a link!</a>
-        <p>My name is:<br>
-            Kitty Cat</p>
-        <img src="cat.jpg">
+        <!-- Add a placeholder for the Twitch embed -->
+        <div id="twitch-embed"></div>
+    
+        <!-- Load the Twitch embed JavaScript file -->
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    
+        <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+        <script type="text/javascript">
+          new Twitch.Embed("twitch-embed", {
+            width: 854,
+            height: 480,
+            channel: "InfernalVesper",
+            // Only needed if this page is going to be embedded on other websites
+            parent: ["infernalvesper.com"]
+          });
+        </script>
     </body>
 </html>
