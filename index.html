@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>InfernalVesper Coming Soon!</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+        <h1>Welcome to My Website</h1>
+	<h2>Something cool is coming soon!</h2>
+    </main>
+	<script src="index.js"></script>
+	<!-- Add a placeholder for the Twitch embed -->
+		<div id="twitch-embed"></div>
+
+		<!-- Load the Twitch embed script -->
+		<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+		<!-- Create a Twitch.Player object. This will render within the placeholder div -->
+		<script type="text/javascript">
+  		new Twitch.Player("twitch-embed", {
+    	channel: "InfernalVesper"
+  		});
+		</script>
+  </body>
+</html>
